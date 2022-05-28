@@ -1,7 +1,121 @@
+body {
+	font-size: 1em;
+}
 .cell {
+	background-color: rgb(153, 152, 182);
 	border: 1px solid black;
-	width: 100px;
-	height: 100px;
-	text-align: center;
+	width: 40px;
+	height: 40px;
 	cursor: pointer;
+
+	text-align: center;
+}
+.hidden {
+	background-color: rgb(153, 152, 182);
+	cursor: pointer;
+}
+
+.shown {
+	cursor: default;
+	background-color: rgb(190, 189, 219);
+}
+.boom {
+	background-color: hwb(0 31% 4%);
+	cursor: default;
+}
+.marked {
+	font-size: 30px;
+}
+.board-container {
+	width: 100%;
+	height: 70%;
+	display: flex;
+}
+.info_board {
+	border: 1px solid black;
+	display: flex;
+	background-color: rgb(182, 175, 152);
+}
+.game {
+	background-color: rgb(153, 152, 182);
+	width: 600px;
+	height: 920px;
+	/* margin-left: 650px; */
+	border: 5px solid black;
+}
+
+.icon {
+	margin-left: 140px;
+	background-color: rgb(182, 175, 152);
+
+	font-size: 40px;
+	border: none;
+	cursor: pointer;
+}
+.icon:hover {
+	font-size: 48px;
+}
+
+table {
+	width: 100%;
+	border: none;
+	font-size: 28px;
+}
+.level {
+	width: 30%;
+	height: 6%;
+	margin-left: 12px;
+	margin-top: 10px;
+	font-size: 20px;
+	font-weight: bolder;
+	border-radius: 15px;
+	/* border: none; */
+	background-color: rgb(182, 175, 152);
+	cursor: pointer;
+}
+
+.level:hover {
+	background-color: rgb(201, 196, 177);
+}
+
+.time {
+	margin-left: 140px;
+}
+
+.mark_remain {
+	padding-left: 25px;
+}
+
+.helpers {
+	height: 40px;
+	background-color: rgb(153, 152, 182);
+	border: none;
+}
+.hint {
+	margin-left: 130px;
+	font-size: 35px;
+	cursor: pointer;
+}
+
+.life {
+	font-size: 40px;
+	margin-left: 115px;
+}
+.undo {
+	font-size: 35px;
+	margin-left: 75px;
+	cursor: pointer;
+}
+
+.safe {
+	margin-left: 255px;
+	font-size: 45px;
+	margin-top: 17px;
+	cursor: pointer;
+}
+.showWay {
+	font-size: 45px;
+	margin-top: 17px;
+	cursor: pointer;
+	margin-left: 142px;
 }

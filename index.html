@@ -8,8 +8,26 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body onload="init()">
-		<div class="board-container"></div>
+		<div class="game">
+				<div class="info_board">
+				<h2 class="mark_remain ">Flags -  <spanך  class="mark__remain"></span></h2> </h2>
+				<button  class="icon" onclick="level1(this);">😃</button>
+				<h2 class="time">00:00:00</h2>
+			</div>
+			<div class="board-container"></div>
+			<button class="level 1" onclick="level1(this);">Beginner</button>
+			<button class="level 2" onclick="level2(this);">Normal</button>
+			<button class ="level 3" onclick="level3(this);">Expert</button>
+			<button class="helpers undo" onclick="undo(this)">↩️</button>
+			<button class="helpers life">❤️<span class="life_score">3</span></button> 
+			<button class="helpers hint" onclick="getHint(this);">🔍</button>	
+			<button class="helpers safe" onclick="getSafe(this);">🔥</button>	
+			<button class="helpers showWay" onclick="showWay(this);">💡</button>
+				
+		</div>
+	
 		<script src="js/util.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
+
